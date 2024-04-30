@@ -27,7 +27,7 @@ def move_files(source_dir, destination_dir):
 
 # Приклад використання:
 source_directory = r"C:\Users\PC\PycharmProjects\lab1\AI\res\TestModel\cars"
-#source_directory = r"C:\Users\PC\PycharmProjects\lab1\AI\res\test_sort_photos\no_cars"
+#source_directory = r"C:\Users\PC\PycharmProjects\lab1\AI\trained models\test_sort_photos\no_cars"
 
 destination_directory = r"C:\Users\PC\PycharmProjects\lab1\cars_nocars\cars"
 #destination_directory = r"C:\Users\PC\PycharmProjects\lab1\cars_nocars\no_cars"
