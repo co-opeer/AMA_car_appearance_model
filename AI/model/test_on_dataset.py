@@ -2,7 +2,7 @@
 import os
 import tensorflow as tf
 
-saved_model_path = r'C:\Users\PC\AMA_car_appearance_model\AI\res\saved_model.h5'
+saved_model_path = r'C:\Users\PC\OneDrive\Документи\GitHub\AMA_car_appearance_model\AI\res\saved_model.h5'
 model = tf.keras.models.load_model(saved_model_path)
 
 def predict_car(image_path):
@@ -39,8 +39,8 @@ def test_model(directory_path):
 
 
 print("Photo only with cars")
-a = test_model(r"C:\Users\PC\AMA_car_appearance_model\drive\cars_nocars\cars")
+a = test_model(r"C:\Users\PC\OneDrive\Документи\GitHub\AMA_car_appearance_model\AI\dataset\drive\cars_nocars\cars")
 print("Photo only without  cars")
-b = test_model(r"C:\Users\PC\AMA_car_appearance_model\drive\cars_nocars\no_cars")
+b = test_model(r"C:\Users\PC\OneDrive\Документи\GitHub\AMA_car_appearance_model\drive\cars_nocars\no_cars")
 print("cars", a[1]/a[0])
 print("no_cars", b[2]/b[0])
